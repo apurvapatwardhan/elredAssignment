@@ -16,7 +16,7 @@ function Header() {
             alt=""
           /></NavLink>
         </div>
-        <div className='head-left-two'>
+        <div className='head-left-two' onClick={() => toast('coming soon')}>
           <BsSearch />
           <input type="text" name="" id="" placeholder="Searchs" />
         </div>
