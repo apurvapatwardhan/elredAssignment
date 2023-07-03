@@ -30,7 +30,7 @@ function Cart() {
   }, 0)
   const SGST = Number((itemsTotal * 9) / 100 );
   const orderTotal = itemsTotal + 1000 + (3 * SGST);
-  const cartLength = Object.keys(cartItems);
+  const cartLength = Object.keys(cartItems).length;
   let ccEle, mapArr;
   if(cartLength > 4 && !seeall) {
      mapArr = Object.values(cartItems).slice(0, 4);

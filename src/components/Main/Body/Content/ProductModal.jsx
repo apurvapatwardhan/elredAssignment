@@ -117,6 +117,8 @@ function ProductModal() {
   if (!showProductModal) {
     return null
   }
+
+  const updatedOrderList = orderList.filter(olp => olp.pid === product.productId)
   return (
     <div className="overlay" >
       <div className="prod-modal">
@@ -243,10 +245,10 @@ function ProductModal() {
             <div className="mr-tb-head">Qty</div>
             <div className="mr-tb-head">{'Price'}</div>
             <div className="mr-hide">Delete</div>
-            {orderList.length === 0 ? (
+            {updatedOrderList.length === 0 ? (
               <div className="alas-no-items">No Items Added</div>
             ) : (
-              orderList.map((oi) => {
+              updatedOrderList.map((oi) => {
                 const { label, color, pImage, qty, price, totalPrice, vid } = oi
                 const elem = (
                   <React.Fragment>
@@ -276,7 +278,7 @@ function ProductModal() {
                 return elem
               })
             )}
-            {orderList.length > 0 ? (
+            {updatedOrderList.length > 0 ? (
               <div className="add-to-cart-mr">
                 <button onClick={() => addToCart()}>Add to Cart</button>
               </div>
