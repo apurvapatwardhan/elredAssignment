@@ -1,0 +1,8 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+.body-top {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}

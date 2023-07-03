@@ -1,0 +1,154 @@
+.prod-modal {
+    position: absolute;
+    background-color: #f5f8fc;
+    border: 1px solid black;
+    width: 70vw;
+    right: 0.5rem;
+    top: 0px;
+    z-index: 1;
+    
+}
+
+.close-pr-md {
+   
+    position: absolute;
+    font-size: 14px;
+    right: 1rem;
+    cursor: pointer;
+
+}
+
+.mr-tb-head {
+    background-color: #f5f8fc;
+    font-size: 15px;
+    height: min-content;
+    padding: 8px 0px;
+}
+
+.prod-modal-container {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding: 2rem;
+}
+
+.modal-left-img {
+    width: 5rem;
+}
+
+.modal-head-img-container {
+    width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold-head-modal {
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.qty-head {
+    
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.add-div {
+    margin: 1rem 0px;
+    display: flex;
+}
+
+.add-btn {
+    width: 25%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.btn-selected-modal {
+    border: 2px solid red;
+    background: wheat;
+}
+
+.ad-btn-dbld {
+    background-color: gray;
+}
+
+.prod-modal-right {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: white;
+    box-shadow: 1px 0px 5px 0px gray;
+    padding: 12px;
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.prod-modal-right> div {
+    transform: scale(0.8);
+}
+.mr-img {
+    width: 3rem;
+}
+
+.mr-delete {
+    color:red;
+}
+
+.mr-delete button {
+    border: none;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+.mr-hide {
+    visibility: hidden;
+}
+
+.alas-no-items {
+    font-size: 20px;
+    color: red;
+    font-weight: 900;
+}
+
+.add-to-cart-mr button{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+
+.img-alternate {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom left, #ff8eff, #54c7d1);
+    border-radius: 10px;
+
+}
+
+.img-alternate-order {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom left, #ff8eff, #54c7d1);
+    border-radius: 10px;
+}

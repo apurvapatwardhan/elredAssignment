@@ -1,0 +1,128 @@
+.cart {
+    padding: 1.5rem;
+    background-color: white;
+    margin: 1rem 1rem 0rem 1rem;
+    box-shadow: -1px -1px 7px 1px gray;
+}
+
+.invisible {
+    visibility: hidden;
+}
+.cart-container {
+    padding: 0rem 0.5rem;
+}
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.cart-item img {
+    width: 2rem;
+}
+
+.cart-head {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    margin-bottom: 1rem;
+    padding: 1rem 2px;
+    background: #eff0f9;
+    z-index: 0;
+
+}
+
+.cart-head-edit {
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+    color: red;
+    cursor: pointer;
+}
+
+.cart-more {
+    
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: red;
+    font-size: 11px;
+    justify-content: center;
+    box-shadow: 1px 1px 3px gray;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+.p-cart {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.pad-sides {
+    padding: 0rem 1rem;
+}
+
+.btns {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bg-red-f-w {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.bg-white-f-b {
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.mt-cart {
+    color: red;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.od-total {
+    font-weight: 600;
+    font-size: 11px;
+    border-top: 1px solid black;
+}
+
+.btns {
+    cursor: pointer;
+}
+
+.see-all {
+    position: fixed;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5);
+}
+
+.img-alternate-order-cart {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom left, #ff8eff, #54c7d1);
+    border-radius: 10px;
+}
